@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script
+      src="https://kit.fontawesome.com/59f98b6a91.js"
+      crossorigin="anonymous"
+    ></script>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <title>Document</title>
+    <style>
+      a {
+        display: grid;
+        grid-template-columns: 3fr 10fr;
+        width: 100%;
+        justify-content: center;
+        align-items: center;
+        padding: 5px;
+      }
+      a:hover {
+        background: rgb(228, 228, 228);
+      }
+      i {
+        margin-right: 0.5rem;
+        justify-self: end;
+      }
+    </style>
+  </head>
+  <body class="relative bg-gray-100 h-screen">
+    <div
+      class="text-center w-[90%] md:w-3/4 lg:w-1/2 mx-auto py-[50%] md:py-[30%] lg:py-[20%] grid gap-3"
+    >
+      <h1
+        class="text-3xl md:text-4xl lg:text-5xl font-bold bg-clip-text text-transparent bg-gradient-to-r from-pink-500 to-violet-500"
+      >
+        Custom context-menu
+      </h1>
+      <p class="bg-green-100 p-2 rounded text-justify">
+        this is a custom context-menu project. in this project i have just tried
+        to add my own context-menu items to the page. the context-menu logic
+        added to body node! <br />i hvae used tailwindcss && fontawesome icons.
+      </p>
+    </div>
+    <ul class="bg-white rounded-lg grid w-fit gap-2 hidden absolute">
+      <li>
+        <a href="#"><i class="fa fa-share" aria-hidden="true"></i> Share</a>
+      </li>
+      <li>
+        <a href="#"><i class="fa fa-pencil" aria-hidden="true"></i> Rename</a>
+      </li>
+      <li>
+        <a href="#"
+          ><i class="fa fa-link" aria-hidden="true"></i> Copy Link Address</a
+        >
+      </li>
+      <li>
+        <a href="#"><i class="fa fa-copy" aria-hidden="true"></i> Copy To</a>
+      </li>
+      <li>
+        <a href="#"><i class="fa fa-paste" aria-hidden="true"></i> Move To</a>
+      </li>
+      <li>
+        <a href="#"
+          ><i class="fa fa-download" aria-hidden="true"></i> Download</a
+        >
+      </li>
+      <li>
+        <a href="#"><i class="fa fa-trash" aria-hidden="true"></i> Delete</a>
+      </li>
+    </ul>
+
+    <script src="script.js"></script>
+  </body>
+</html>
